@@ -1,0 +1,19 @@
+# Program to calculate Area and Perimeter of a Rectangle
+# Input values must be positive
+print("---- Rectangle Area and Perimeter Calculator ----")
+# Taking input from user
+length = float(input("Enter length of rectangle: "))
+# Checking whether inputs are positive
+if length <= 0:
+    print("Invalid input! Length must be positive numbers.")
+width = float(input("Enter width of rectangle: "))
+if width <= 0:
+    print("Invalid input! width must be positive numbers.")
+else:
+    # Calculating area
+    area = length * width
+    # Calculating perimeter
+    perimeter = 2 * (length + width)
+    # Displaying results
+    print("Area of Rectangle =", area)
+    print("Perimeter of Rectangle =", perimeter)
