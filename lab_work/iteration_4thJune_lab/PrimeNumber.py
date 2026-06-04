@@ -1,16 +1,20 @@
-# check whetger a number is prime or not
-num = int(input("Koi bhi number enter karein: "))
+# Accept a number from the user
+num = int(input("Enter a number: "))
 
-if num <= 1:
-    print(f"{num} prime number nahi hai.")
+factor_count = 0
+
+print("Factors:", end=" ")
+
+# Find and display all factors
+for i in range(1, num + 1):
+    if num % i == 0:
+        print(i, end=" ")
+        factor_count += 1
+
+print()
+
+# Check if the number is prime
+if factor_count == 2:
+    print(num, "is a Prime Number")
 else:
-    for i in range(2, num):
-        if num % i == 0:
-            is_prime = False  # Agar kisi se bhi divide ho gaya, to prime nahi hai
-            break            
-
-    # Final result check karna
-    if is_prime == True:
-        print(f"{num} ek Prime Number hai! ")
-    else:
-        print(f"{num} Prime Number nahi hai. ")
+    print(num, "is not a Prime Number")
