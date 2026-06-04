@@ -11,13 +11,13 @@ for i in range(1, 6):
 # Calculate percentage
 percentage = total / 5
 # Determine grade
-if percentage >= 90:
+if percentage >= 90 and <75:
     grade = "A+"
-elif percentage >= 75:
+elif percentage >= 75 and <60:
     grade = "A"
-elif percentage >= 60:
+elif percentage >= 60 and <40:
     grade = "B"
-elif percentage >= 40:
+elif percentage >= 40 and <30:
     grade = "C"
 else:
     grade = "Fail"
