@@ -1,6 +1,7 @@
 # Accept marks of 5 subjects
 total = 0
 failed_subjects = 0
+print("marks should be 0 to 100")
 for i in range(1, 6):
     marks = float(input(f"Enter marks of Subject {i}: "))
     total += marks
