@@ -1,0 +1,17 @@
+# Accept a number from user input
+num_str = input("Enter a number: ")
+is_consecutive = True  # Flag to track if the number is consecutive
+# Iterate from the second character to the last character
+for i in range(1, len(num_str)):
+    # Convert characters to integers to compare them
+    current_digit = int(num_str[i])
+    previous_digit = int(num_str[i-1])
+    # If current digit is NOT exactly 1 greater than the previous, it's invalid
+    if current_digit != previous_digit + 1:
+        is_consecutive = False
+        break  # Exit the loop early
+# Print the final output based on the flag status
+if is_consecutive:
+    print("Consecutive Number")
+else:
+    print("Not a Consecutive Number")
