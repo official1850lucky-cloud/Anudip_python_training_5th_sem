@@ -38,9 +38,9 @@ print("-------------------------------------")
 # Task 3: Find the employee with the highest score
 # Initialize with the first employee's data
 highest = employees[0] 
-for emp in employees[1:]:
-    if emp[2] > highest[2]:
-        highest_performer = emp
+for i in employees[1:]:
+    if i[2] > highest[2]:
+        highest = emp
 print(f"Highest Performer: {highest[0]} {highest[1]} {highest[2]}")
 print("-------------------------------------------") 
 # Task 4: Create a list containing the names of all employees scoring above 75
