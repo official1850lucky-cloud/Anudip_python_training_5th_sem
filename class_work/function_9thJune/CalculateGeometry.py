@@ -25,7 +25,7 @@ while True:
             print("Select an operation: ")
             print("1. Area")
             print("2. Perimeter")
-            print("3. Exit")
+            print("3. Change Figure")
             operation = int(input("Enter your choice: "))
             if operation == 1:
                 area = geometry.rectangle_area(length, width)
@@ -36,7 +36,13 @@ while True:
             elif operation == 3:
                 break
             else:
-                print("Invalid choice! Please try again.")
+                print("Invalid! Please try again.")
+            condition=input("Do you want to perform another operation on the same figure? (Y/N): ").lower()
+            
+            if condition=="y":
+                continue
+            else:
+                break
     elif choice == 2:
         #------------------------- get the side of the square from the user--------------------------------------
         side = float(input("Enter the side of the square: "))
@@ -44,7 +50,7 @@ while True:
             print("Select an operation: ")
             print("1. Area")
             print("2. Perimeter")
-            print("3. Exit")
+            print("3. Change Figure")
             operation = int(input("Enter your choice: "))
             if operation == 1:
                 area = geometry.square_area(side)
@@ -55,15 +61,15 @@ while True:
             elif operation == 3:
                 break
             else:
-                print("Invalid choice! Please try again.")
+                print("Invalid! Please try again.")
     elif choice == 3:
-        # ----------------------------------get the radius of the circle from the user-------------------------------------
+        #get the radius of the circle from the user
         radius = float(input("Enter the radius of the circle: "))
         while True:
             print("Select an operation: ")
             print("1. Area")
             print("2. Perimeter")
-            print("3. Exit")
+            print("3. Change Figure")
             operation = int(input("Enter your choice: "))
             if operation == 1:
                 area = geometry.circle_area(radius)
@@ -74,7 +80,7 @@ while True:
             elif operation == 3:
                 break
             else:
-                print("Invalid choice! Please try again.")
+                print("Invalid! Please try again.")
     elif choice == 4:
         print("Exiting the program.")
         break
